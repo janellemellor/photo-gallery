@@ -10,10 +10,8 @@ class App extends Component {
   return (
     <div>
       <Header />
-      <ul>
       <ImageList images={images} />
-      </ul>
-      <ImageItem />
+      <ImageItem image={images} />
     </div>
 
   );
