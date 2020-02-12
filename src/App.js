@@ -19,7 +19,6 @@ state = { selected: null };
     return (
         <div>
           <Header />
-          <ImageList images={filteredImages} />
           <select onChange={handleChange} >
             <option value='' defaultValue>All</option>
             <option value='narwhal'>Narwhal</option>
@@ -34,5 +33,7 @@ state = { selected: null };
             <option value='lizard'>Lizard</option>
             <option value='dragon'>Dragon</option>
           </select>
+          <ImageList images={filteredImages} />
+         
         </div>
   )}}  

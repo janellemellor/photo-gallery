@@ -1,4 +1,5 @@
 import React from 'react';
+import images from './data.js'
 import App from './App.js';
 import Header from './Header.js';
 import ImageList from './ImageList.js';
@@ -21,7 +22,7 @@ test('renders Header.js correctly', () => {
 
 test('renders ImageList.js correctly', () => {
   const tree = renderer
-  .create(<ImageList />)
+  .create(<ImageList images={images} />)
   .toJSON();
   expect(tree).toMatchSnapshot();
 });
