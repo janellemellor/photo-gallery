@@ -20,7 +20,7 @@ state = { selected: null };
     return (
         <div>
           <Header />
-          <Select handleChange={handleChange} />
+          <Select handleChangeCallback={handleChange} />
           <ImageList images={filteredImages} />
          
         </div>

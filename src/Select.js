@@ -5,7 +5,7 @@ export default class Select extends Component {
       render() {
         
         return (
-            <select onChange={this.props.handleChange} >
+            <select onChange={this.props.handleChangeCallback} >
                 <option value='' defaultValue>All</option>
                 <option value='narwhal'>Narwhal</option>
                 <option value='rhino'>Rhino</option>
